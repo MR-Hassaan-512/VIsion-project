@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+/* index3.html */
+body{
+    font-family: 'Poppins', sans-serif;
+  
+}
+#header {
+    height: 10vh;
+    background-image: url(./Oil-Refinery-scaled-e1630945974230.jpg);
+    background-size: cover;
+  }
+  .dropdown:hover .dropdown-menu{
+   
+    display: block;
+    transition: .3s;
+  }
+  a#navbarDropdown {
+    color: #232F55;
+  }
+  
+  nav ul {
+  list-style: none;
+  text-align: center;
+  font-weight: 900;
+  }
+  nav ul li {
+  display: inline-block;
+  font-weight: 900;
+  }
+  nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #232F55;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+  transition: all .5s;
+  }
+  nav ul li a:hover {
+  color: #555;
+  }
+   nav.stroke ul li a,
+  nav.fill ul li a {
+  position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #000;
+  height: 2px;
+  }
+  nav.stroke ul li a:hover:after {
+  width: 50%;
+  }
+  
+  nav.fill ul li a {
+  transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+  }
+  nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+  }
+  #sticky{
+    background-color: #fff;
+    width: 100%;
+    top:0;
+    transition: .2s;
+  }
+  #sticky.fixed {
+    position: fixed;
+    box-shadow: 5px 5px 19px 0px rgba(28, 28, 28, 0.737);
+    background-color:#860707 ;
+    z-index: 1;
+  }
+  #sticky.fixed ul li img {
+    height: 100px;
+  }
+  #sticky.fixed ul li a {
+    font-size: 18px;
+    color: #000;
+  }
+  /* footer */
+  ol.breadcrumb:hover {
+    transition: .1s;
+    font-size: 17px;
+
+}
+
+h1{
+  width: 3%;
+    position: relative;
+    left: 90%;
+    cursor: pointer;
+}
+
+h1:before{
+  content: attr(data-count);
+    color: white;
+    position: absolute;
+    right: 16px;
+    font-size: 15px;
+    text-align: center;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0;
+}
+h1.zero:before{
+  opacity: 1;
+}
+
+
+
+
+.item button{
+    padding: 5px;
+    background-image: linear-gradient(to right,#ff523b 0%,#ff523b 50%,#ff523b 100%);
+        background-size: 200% auto;
+        transition: .5s;
+        border-radius: 5em;
+        font-weight: 500;
+        min-width: 150px;
+        padding: 14px 26px;
+        transition: .5s;
+        color: #e6e2e2;
+        border:transparent;
+      cursor: pointer;
+  }
+  .col-lg-4 {
+    border: 1px solid rgba(162, 159, 159, 0.18);
+    padding:5px
+}
+.col-lg-4:hover {
+  box-shadow: 10px 10px 40px 10px rgba(135, 134, 134, 0.346);
+  transition: .5s;
+}
+ .item  button:hover{
+    padding: 5px;
+    background-image: linear-gradient(to right,#563434 0%,#563434 50%,#563434 100%);
+        background-size: 200% auto;
+        transition: .5s;
+         
+        border-radius: 5em;
+        font-weight: 500;
+        min-width: 150px;
+        padding: 14px 26px;
+        transition: .5s;
+        color: #e6e2e2;
+        border:transparent;
+      cursor: pointer;
+  }
+  section div span{
+    position: absolute;
+      top: 14px;
+      left: 13px;
+      background: red;
+      width: 300px;
+      height: 186px;
+      display: none;
+  }
+  section div span img{
+    width: 100%;
+    height: 100%;
+  }
+  section div:nth-child(1)>span.active{
+    animation: first 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+  }
+  section div:nth-child(2)>span.active{
+    animation: second 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+  }
+  section div:nth-child(3)>span.active{
+    animation: third 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+  }
+  section div:nth-child(4)>span.active{
+    animation: four 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+  }
+
+
+  
+  .select{
+
+   height: 540px;
+    padding: 5%;
+    position: fixed;
+   background:#fff;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+   display: block;
+  }
+  .select.display{
+    top: 10px;
+  }
+  .select div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 5px;
+    
+    position: relative;
+    margin: 5px auto;
+  }
+  .select div img{
+    width: 180px;
+    height: 100%;
+  }
+
+  .select div h6,
+  .select div button{
+    position: absolute;
+    left: 52%;
+    top: 33%;
+    color: white;
+  }
+  .select div button{
+    left: 33;
+    top: 70%;
+  }
+  .select div span{
+    display: none;
+  }
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(209, 210, 221); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgb(27, 44, 60); 
+}

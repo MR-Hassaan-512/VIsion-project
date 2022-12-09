@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+/* index2.html */
+body{
+    font-family: 'Poppins', sans-serif;
+  
+}
+#header {
+  height: 5vh;
+  background: url(./Oil-Refinery-scaled-e1630945974230.jpg);
+  background-size: cover;
+}
+.dropdown:hover .dropdown-menu{
+   
+  display: block;
+  transition: .3s;
+}
+a#navbarDropdown {
+  color: #232F55;
+}
+
+nav ul {
+list-style: none;
+text-align: center;
+font-weight: 900;
+}
+nav ul li {
+display: inline-block;
+font-weight: 900;
+}
+nav ul li a {
+display: block;
+padding: 15px;
+text-decoration: none;
+color: #232F55;
+font-weight: 900;
+text-transform: uppercase;
+margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+transition: all .5s;
+}
+nav ul li a:hover {
+color: #555;
+}
+ nav.stroke ul li a,
+nav.fill ul li a {
+position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #000;
+height: 2px;
+}
+nav.stroke ul li a:hover:after {
+width: 50%;
+}
+
+nav.fill ul li a {
+transition: all 2s;
+}
+
+nav.fill ul li a:after {
+text-align: left;
+content: '.';
+margin: 0;
+opacity: 0;
+}
+nav.fill ul li a:hover {
+color: #fff;
+z-index: 1;
+}
+nav.fill ul li a:hover:after {
+z-index: -10;
+animation: fill 1s forwards;
+-webkit-animation: fill 1s forwards;
+-moz-animation: fill 1s forwards;
+opacity: 1;
+}
+#sticky{
+  background-color: #fff;
+  width: 100%;
+  top:0;
+  transition: .2s;
+}
+#sticky.fixed {
+  position: fixed;
+  box-shadow: 5px 5px 19px 0px rgba(28, 28, 28, 0.737);
+  background-color:#860707 ;
+  z-index: 1;
+}
+#sticky.fixed ul li img {
+  height: 100px;
+}
+#sticky.fixed ul li a {
+  font-size: 18px;
+  color: #000;
+}
+ 
+
+  
+  .main .container {
+    position: relative;
+    padding: 40px 20px;
+    background: rgba(61, 61, 61, 0.631);
+    border-radius: 10px;
+    width: 80%;
+    min-height: 400px;
+    box-shadow: 5px 5px 20px 0 rgb(62, 62, 62);
+    overflow: hidden;
+  }
+  .main{
+  background:url('./Oil-Refinery-scaled-e1630945974230.jpg');
+
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+  .form-container {
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  
+  .form-container input {
+    display: block;
+    padding: 12px 20px;
+    outline: none;
+    margin: 7px 13px;
+    background: transparent;
+    border: 2px soild black;
+    color: #fff;
+    font-weight: 500;
+  
+  }
+  
+  .form-sign-in,
+  .form-sign-up {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .signin {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: 0.8s;
+  }
+  .signup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    transition: 0.8s;
+  }
+  
+  .signup.show {
+    bottom: 0;
+  }
+  .signin.hide {
+    top: -100%;
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin:10px 0px 0px;
+    color: #e5e5e5;
+  }
+  
+  .form-container a {
+    margin: 10px;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .form-container .btn {
+    padding: 10px;
+    min-width: 100px;
+    border-radius: 20px;
+    color: white;
+    margin: 20px;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(#ee1111, #f83816fa);
+  }
+  
+  .btn-form {
+    border: none;
+  }
+  
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background:radial-gradient(#ee1111, #f83816fa);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  
+  .overlay h1 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  .overlay span {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+  }
+  
+  .overlay-panel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  
+  .btn-overlay {
+    border: solid 1px white;
+  }
+  
+  .overlay-signup {
+    top: 0;
+    transition: 0.8s;
+  }
+  .overlay-signin {
+    bottom: -100%;
+    transition: 0.8s;
+  }
+  
+  .overlay-signin.show {
+    bottom: 0;
+  }
+  .overlay-signup.hide {
+    top: -100%;
+  }
+    .container{
+      max-width: 920px;
+    }
+  /* footer */
+  
+  ol.breadcrumb:hover {
+    transition: .1s;
+    font-size: 17px;
+
+}  
+
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(209, 210, 221); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgb(27, 44, 60); 
+}

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="http://kit.fontawesome.com/64d58efce2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <title>P.M.O.S</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="./P.M.O.S (1).png" type="image/x-icon" style="height:200;" width="500" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <style>
+#button {
+  display: inline-block;
+  background-color: #ff0000ae;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #b11f1f;
+}
+#button:active {
+  background-color: #b11f1f;
+  text-decoration:none;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+  text-decoration: none;
+}
+
+
+
+
+    ol.breadcrumb:hover {
+    transition: .1s;
+    font-size: 17px;
+
+}
+     .Work {
+
+position: relative;
+transition: transform 4s ease-in;
+overflow: hidden;
+border: 2px solid #fff;
+
+}
+
+.Work img {
+cursor: pointer;
+transition: transform 1s ease-in;
+}
+
+.Work img:hover {
+transform: scale(1.2);
+}
+
+.Work:before {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+content: "";
+transform: translateY(-100%);
+font-size: 25px;
+color: #fff;
+display: block;
+background-color: rgba(188, 143, 143, 0.137);
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: sans-serif;
+transition: transform .4s ease-in;
+border: 4px solid white;
+justify-content: center;
+box-sizing: border-box;
+}
+
+.Work:after {
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+content: "Pakistan multinational Oil service!";
+transform: translateY(100%);
+cursor: pointer;
+font-size: 28px;
+font-weight: 700;
+color: #fff;
+padding-left: 50px;
+display: block;
+background-color: rgba(103, 80, 80, 0.598);
+z-index: 1;
+display: flex;
+justify-content: start;
+align-items: center;
+font-family: sans-serif;
+transition: transform .4s ease-in;
+border: 4px solid white;
+justify-content: start;
+box-sizing: border-box;
+}
+
+.Work:hover::before {
+transform: translateY(0%);
+
+}
+
+.Work:hover::after {
+transform: translateY(0%);
+
+}
+  </style>
+ 
+
+<a id="button" style="border-radius: 50%; text-decoration:none; opacity:70%;"></a>
+    <header>
+      <header id="header"></header>
+
+
+
+
+      <nav class="navbar navbar-expand-lg   navbar-light " id="sticky" >
+        <div class="container-fluid">
+          <a href="#"><img src="./P.M.O.S (1).png" width="100" alt="" data-pagespeed-url-hash="1320415278" class="d-inline-block " onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+          </a>
+    
+          <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+    
+  
+
+          <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+            <nav class="stroke">
+                <ul>
+                  <li><a href="./index.html" style=" font-weight:900;"><b>Home</b></a></li>
+                  <li><a href="./index4.html" style=" font-weight:900;">About</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" font-weight:900;">
+                     <b>Shop</b>
+                    </a>
+                    <ul class="dropdown-menu" style="transition: .5s;" aria-labelledby="navbarDropdown">
+                      <li><a  href="./idex3.html" style=" font-weight:900; font-size:12px">Checkout</a></li>
+                      <li><a  href="./index5.html" style=" font-weight:900; font-size:12px">Store</a></li>
+                      
+                    </ul>
+                  </li>
+
+                
+                  <li><a href="./index2.html" style=" font-weight:900;"><b>Account</b></a></li>
+                  <li><a href="./index7.html" style=" font-weight:900;"  ><b>feedback</b></a></li>
+                  
+                  <li><a href="./index6.html" style=" font-weight:900;"><b>Contact</b></a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="header">
+          <div class="container">
+             <div class="row">
+                 <div class="col">
+                    <div class="bg-col">
+                     <h4>P.M.O.S aims to<BR>achieve net-zero emissions:-</h4>
+                      <p>The Advancing Climate Solutions - 2022 Progress Report outlines P.M.O.S's commitment to driving emission reductions in support of net-zero (Scope 1 & 2) ambition by 2050 for operated assets.</p>
+                      <a href="" class="btn">Explore now &#8594;</a>
+                    </div>
+                 </div>
+               </div>
+         </div>
+       </div>
+     
+      </header>
+      <br>
+      <br>
+    <main>
+
+
+
+        <div class="container marketing">
+
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="	https://institute.global/sites/default/files/styles/teaser_large/public/2022-04/GettyImages-1171442301.jpg?itok=MPZtUwML" class=" rounded-circle" alt="Cinque Terre" height="140" style="
+                        width: 140px;
+                        margin-top: 10px;
+                        border-radius: 100px;
+                    ">
+                    <h4>Improving energy access</h4>
+                    <p>We work to make energy more affordable so more people can benefit from it.</p>
+                    <br>
+                    <p>
+                      <a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://thumbs.dreamstime.com/b/performance-management-efficiency-improvement-business-technology-concept-businessman-pressing-button-96225387.jpg" class="rounded-circle" alt="Cinque Terre" height="140" style="
+                        width: 140px;
+                        margin-top: 10px;
+                        border-radius: 100px;
+                    ">
+
+                    <h4>Improving efficiency</h4>
+                    <p> From longer-lasting fuels to less intensive operations, we work to make energy work harder.</p>
+                    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./images.jpg" class="rounded-circle" alt="Cinque Terre" height="140" style="
+                        width: 140px;
+                        margin-top: 10px;
+                        border-radius: 100px;
+                    ">
+
+                    <h4>Mitigating emissions</h4>
+                    <p>Reducing our impact is a key component of our approach to managing climate-change risks.</p>
+                    <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+            </div>
+
+
+           
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading"><span style="color:#b11f1f; font-size:65px; padding: 0px 20px 0px 0px;">01.</span> <b style="font-size:40px">Chemical Industry<span style="color:#b11f1f;">!</span></b></h2>
+                    <p class="lead" style="text-align:justify;">The chemical industries are not only concerned with the manufacture of pure chemicals, but also with many kinds of industrial raw materials that are mixtures of substances. The raw materials of chemical industries are derived from various sources such as mines, forests, and sea, air, land, oil, gas and brine wells.The need for energy is universal. That's why our engineers are pursuing new technologies to reduce emissions while creating more efficient fuels. We're committed to responsibly meeting the world's energy needs.</p>
+                </div>
+                <div class="col-md-5">
+                  <div class="Work">
+                    <img src="https://html.modernwebtemplates.com/nafta/images/services/service1.jpg"  height="400" width="100%" alt="">
+
+                  </div>
+            
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+           
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading"><span style="color:#b11f1f; font-size:65px; padding: 0px 20px 0px 0px;">02.</span> <b style="font-size:40px;">Saving Technologies<span style="color:#b11f1f;">?</span></b></h2>
+                    <p class="lead" style="text-align:justify;">The environment is a mess: out-of-control wildfires, deforestation, the destruction of coral reefs, pollution. Can technology help reverse climate change and the environmental damage done by our ancestors? Unlike the industrial revolution, technological advancements are no longer primarily powered by steam, iron, and coal mines. Instead, new technologies have led to more sustainable methodologies, better stewardship of our natural resources, and conversion to solar and renewable energy sources. And these have been shown to have an enormous positive impact on the environment.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                  <div class="Work">
+                    <img src="	https://html.modernwebtemplates.com/nafta/images/services/service2.jpg
+                        "  height="400" width="100%" alt="pic-2">
+
+                  </div>
+                        
+                    
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading"><span style="color:#b11f1f; font-size:65px; padding: 0px 20px 0px 0px;">03.</span> <b style="font-size:40px;">Why our consulting<span style="color:#b11f1f;">?</span></b></h2>
+                    <p class="lead" style="text-align:justify;">When your people get up every day wanting to come to work, success happens. We help you to ensure everyone is in the right jobs, well motivated and properly rewarded.Affordable and sustainable energy solutions are required to advance global prosperity. We invest in technology and communities to bring the world better energy.</p>
+                </div>
+                <div class="col-md-5">
+                  <div class="Work">
+                    <img src="		http://themes.webdevia.com/petroleum-gas/wp-content/uploads/2013/06/8555736073_8cde64941a_b.jpg" height="400" width="100%" alt="">
+
+                  </div>
+                    
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+           
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading"><span style="color:#b11f1f; font-size:65px; padding: 0px 20px 0px 0px;">04.</span> <b style="font-size:40px;">We Spread
+                    Around The Pakistan<span style="color:#b11f1f;">.</span></b></h2>
+                  <p class="lead" style="text-align:justify;">Opened 20+ offices in Pakistan within a year becuase Our quality is our identity.</p>
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <span style="color:#b11f1f;">3+</span><br>
+                      <b style="font-size:15px;">years <br> Experience</b>
+                      
+                    </div>
+                    <div class="col-lg-3">
+                      <span style="color:#b11f1f;">20+</span><br>
+                      <b style="font-size:15px;">Offices in Pakistan</b>
+                      
+                    </div>
+                    <div class="col-lg-3">
+                      <span style="color:#b11f1f;">2K+</span><br>
+                      <b style="font-size:15px;">Workers Employeed</b>
+                      
+                    </div>
+                  </div>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <div class="Work">
+                  <img src="https://www.pngitem.com/pimgs/m/8-86206_pakistan-map-png-transparent-political-division-of-pakistan.png" height="400" width="100%" alt="">
+
+                </div>
+
+              </div>
+          </div>
+
+          <hr class="featurette-divider">
+            
+
+        </div>
+
+    </main>
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">    
+            <h1 class="text-muted">
+                FAQ-Information:-
+            </h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                 Get to know us?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Our company is the only company that provides services like petrol, oil to Pakistani people at home for less than the commercial rate.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  get informed?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Our team has been working for you guys for three years in which we called for reducing traffic and reducing traffic at petrol pumps.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Our products are really good?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">we have all  original and pure refined products.All our products are imported and also certified by the government of Pakistan.</div>
+              </div>
+            </div>
+        </div></div>
+         <div class="col-lg-6 col-sm-12"> 
+            <img src="	https://html.modernwebtemplates.com/nafta/images/partners/01.png" class="rounded float-start img-thumbnail" alt="1">
+            <img src="https://html.modernwebtemplates.com/nafta/images/partners/02.png" class="rounded mx-auto d-block img-thumbnail" alt="2">
+            <img src="https://html.modernwebtemplates.com/nafta/images/partners/03.png" class="rounded float-end img-thumbnail" alt="3">
+            <br>
+            <br>
+            <img src="	https://html.modernwebtemplates.com/nafta/images/partners/04.png" class="rounded float-start img-thumbnail" alt="4">
+            <img src="https://html.modernwebtemplates.com/nafta/images/partners/05.png" class="rounded mx-auto d-block img-thumbnail" alt="5">
+            <img src="https://html.modernwebtemplates.com/nafta/images/partners/06.png" class="rounded float-end img-thumbnail" alt="6">
+           
+        </div> 
+    </div>
+   </div> 
+     <br>
+     <section class=" bg-light p-5 ls ms s-pt-xl-160 s-pt-lg-130 s-pt-md-90 s-pt-60 s-pb-xl-280 s-pb-lg-250 s-pb-md-90 s-pb-60 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="special-heading text-center">
+              <span class="text-capitalize px-2" style="color:#b11f1f; font-weight:800;border-bottom: 1px solid #555; box-shadow: 2px 2px 2px 1px #555;">
+                Latest News
+              </span>
+            </h2>
+            <br>
+            <p class="special-heading text-center">
+              <span class="text-capitalize color-darkgrey bold px-2" style="color:#555;font-size:30px; font-style:italic; font-weight:600; text-shadow:2px 2px 2px  #e92929b8; ">
+                our blog
+              </span>
+            </p>
+            <div class="divider-30 hidden-above-lg"></div>
+            <div class="shortcode-posts row tiled-layout c-gutter-30 c-mb-30" >
+              <div class="bigitem col-xl-6 col-lg-5 mt-5">
+                <article class="vertical-item ls rounded post type-post status-publish format-standard has-post-thumbnail px-2" style="box-shadow:2px 2px 4px #555;">
+                  <div class="item-media post-thumbnail">
+                    <a href="#">
+                      <img src="./01.jpg" class="img-fluid" alt="img">
+                    </a>
+                  </div><!-- .post-thumbnail -->
+                  <div class="item-content">
+                    <header class="entry-header">
+                      <div class="entry-meta">
+                        <div class="byline">
+                          <span class="date">
+                            <a href="#" rel="bookmark" class="text-dark text-decoration-none">
+                              <time class="published entry-date" datetime="2019-04-09T12:23:09+00:00">20.03.2019</time>
+                            </a>
+                          </span>
+                          <b style="font-size:20px; color:#555;">|</b>
+                          <span class="author vcard text-decoration-none">
+                            <a class="url fn n text-decoration-none" style="color:#555;" href="#" ><span>by</span> Admin</a>
+                          </span>
+                        </div>
+                      </div>
+                      <h4 class="entry-title">
+                        <a href="#" class=" text-decoration-none" rel="bookmark" style="color:#b11f1f; font-weight:700; font-size:20px;   ">
+                          Consectetur adipisicing elited do eiusmod tempor incididunt ut labore.
+                        </a>
+                      </h4>
+
+                      <!-- .entry-meta -->
+                    </header>
+                    <!-- .entry-header -->
+
+                    <div class="entry-content">
+                      <p style="color:#555; text-align:justify; font-size:15px;">
+                        Karachi - The Commandant Police Training College DIG Mahboob Aslam and the Chief Executive & Managing Director of <b>P.M.O.S</b>, Muhammad Hassaan, inaugurated a trainees hostel at National Highways and Motorway Police (NHMP) Training College Sheikhupura with the capacity of 100 drivers. Shell Pakistan constructs the hostel under the supervision of Commandant Training College, DIG Mahboob Aslam.
+                      </p>
+                    </div><!-- .entry-content -->
+                  </div><!-- .item-content -->
+                </article><!-- #post-## -->
+              </div>
+              <div class=" smallitem col-xl-6 col-lg-7 mt-5 " >
+
+                <article class="vertical-item side-item ls rounded post type-post status-publish format-standard has-post-thumbnail">
+                  <div class="row" >
+                    <div class="col-lg-5" >
+                      <div class="item-media post-thumbnail">
+                        <a href="blog-single-@@type.html">
+                          <img src="./02.jpg" alt="img" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-lg-7" style="box-shadow: 2px 2px 4px #555 ;">
+                      <div class="item-content">
+                        <header class="entry-header">
+                          <div class="entry-meta">
+                            <div class="byline text-decoration-none" style="font-weight:500; text-decoration:none;   ">
+                              <span class="date">
+                                <a href="#" rel="bookmark" class=" text-decoration-none">
+                                  <time class="published text-decoration-none entry-date text-dark" >17.09.2022</time>
+                                </a>
+                              </span>
+                              <b style="font-size:20px; color:#555;">|</b>
+                              <span class="author vcard text-decoration-none">
+                                <a class="url fn n text-decoration-none" style="color:#555;" href="#" ><span>by</span> Admin</a>
+                              </span>
+                            </div>
+                          </div>
+                          <h4 class="entry-title">
+                            <a href="#" class=" text-decoration-none" style="color:#b11f1f; font-weight:700; font-size:20px;   ">
+                              Pakistan -
+                            </a>
+                          </h4>
+    
+                          
+                        </header>
+                        
+    
+                        <div class="entry-content">
+                          <p style="color:#555; text-align:justify; font-size:10px;">
+                            Karachi, Pakistan − <b>P.M.O.S</b> is a leading global supplier of finished lubricants for 15 consecutive years. P.M.O.S Lubricants business in Pakistan has appointed Burque Corporation to manage its distribution in Quetta to improve customer experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </article>
+                    <br>
+                    <article class="vertical-item side-item ls rounded post type-post status-publish format-standard has-post-thumbnail">
+                      <div class="row" >
+                        <div class="col-lg-5" >
+                          <div class="item-media post-thumbnail">
+                            <a href="blog-single-@@type.html">
+                              <img src="./03.jpg" alt="img" class="img-fluid">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-7" style="box-shadow: 2px 2px 4px #555 ;">
+                          <div class="item-content">
+                            <header class="entry-header">
+                              <div class="entry-meta">
+                                <div class="byline text-decoration-none" style="font-weight:500; text-decoration:none;   ">
+                                  <span class="date">
+                                    <a href="#" rel="bookmark" class=" text-decoration-none">
+                                      <time class="published text-decoration-none entry-date text-dark" >17.08.2022</time>
+                                    </a>
+                                  </span>
+                                  <b style="font-size:20px; color:#555;">|</b>
+                                  <span class="author vcard text-decoration-none">
+                                    <a class="url fn n text-decoration-none" style="color:#555;" href="#" ><span>by</span> Admin</a>
+                                  </span>
+                                </div>
+                              </div>
+                              <h4 class="entry-title">
+                                <a href="#" class=" text-decoration-none" style="color:#b11f1f; font-weight:700; font-size:20px;   ">
+                                  Pakistan -
+                                </a>
+                              </h4>
+        
+                              
+                            </header>
+                            
+        
+                            <div class="entry-content">
+                              <p style="color:#555; text-align:justify; font-size:10px;">
+                                The Board of Directors of <b class="text-dark">P.M.O.S</b> announced the Company’s half year results on August 17th, 2022. The Company posted a profit after tax of PKR 70 million compared to the profit of PKR 22 million made in the same period last year.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+    
+    
+                    </article>
+              </div>
+            </div>
+            <div class="mt--30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <br>
+
+     <div class="container-fluid px-5 py-5" style="background-color:#a00505da;">
+      <div class="row">
+               
+        <div class="col-lg-3 col-sm-12 ">
+       <div class="single-footer-caption">
+    
+            <div class="footer-logo" style="
+            margin-top: -30px;
+        ">
+            <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;"><img src="./P.M.O.S (1).png"  width="50%" alt="" class="img-fluid"> </h4></a>
+            </div>
+            <div class="footer-tittle">
+              <p class="text-left" style="color:#A5A7C5; font-weight: 500; cursor: pointer; text-align: justify;">Our services is to sustainably make the pleasure & benefits of petroleum products to many.</p>
+    
+            </div>
+    
+            
+    
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 my-5">
+       <div class="single-footer-caption mb-30">
+    
+            <div class="footer-logo mb-25 mb-5">
+            <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Company </h4></a>
+            </div>
+            <div class="footer-tittle">
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">About</li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Review</li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Insights</li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">career</li>
+                </ol>
+              </nav>
+    
+            </div>
+    
+            
+    
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 ">
+       <div class="single-footer-caption mb-30">
+    
+            <div class="footer-logo mb-25 mb-5">
+            <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Newsletter </h4></a>
+            </div>
+            <div class="footer-tittle">
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active text-center" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Sign-up your news letter </li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb ">
+                  <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">
+                    <div class="d-flex justify-content-evenly">
+                    <input type="text" style="margin-right:10px;" class="form-control" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress"><a class="btn btn-outline-danger" href="#" role="button">GO</a>
+                 </div>
+                </li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page"> <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/facebook-button-light-99fde1b2.svg"></a>
+                      
+                      
+                    <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/twitter-button-light-4b743ac5.svg" alt=""></a>
+        
+        
+                    <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/vkontakte-button-light-bf48b9be.svg" alt=""></a>
+                  </li>
+                </ol>
+              </nav>
+
+
+
+    
+            </div>
+    
+            
+    
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 my-5">
+       <div class="single-footer-caption mb-30">
+    
+            <div class="footer-logo mb-25 mb-5">
+            <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Contact us </h4></a>
+            </div>
+            <div class="footer-tittle">
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">mrhassaanvlogs@gmail.com</li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">H.no: 278 51/A ,Korangi 6 road,Karachi,Pakistan</li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb" style="cursor: pointer;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" style="color: #eaa872;font-size: x-large; font-weight:700;transition: .4s;" aria-current="page">(+92 313 2075237)</li>
+                </ol>
+              </nav>
+    
+            </div>
+    
+            
+    
+            </div>
+        </div>
+    
+      </div>
+      <br>
+      <hr>
+      <br>
+      <div class="row">
+        <div class="col-lg-12">
+          <h6 class="h6 text-center " style="font-size: large; color:#A5A7C5;">Copyright ©2022 All rights reserved | This site is made with <i class="fa fa-heart text-danger"></i> by  <b style="color:#eaa872;"> M.Hassaan</b> & <b style="color:#eaa872;">Luqman Awan</b>  from aptech.</h6>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>             
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+      <script>
+        const nav = document.querySelector('#sticky');
+let navTop = sticky.offsetTop;
+
+function fixedNav() {
+  if (window.scrollY >= navTop) {    
+    nav.classList.add('fixed');
+  } else {
+    nav.classList.remove('fixed');    
+  }
+}
+
+window.addEventListener('scroll', fixedNav);
+      </script>
+    <script>
+      var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+    </script>
+
+
+
+</body>
+
+</html>

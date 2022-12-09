@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+/* index.html */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+  
+
+#header {
+  height: 5vh;
+  background: url(./Oil-Refinery-scaled-e1630945974230.jpg);
+  background-size: cover;
+}
+.dropdown:hover .dropdown-menu{
+   
+  display: block;
+  transition: .3s;
+}
+a#navbarDropdown {
+  color: #232F55;
+}
+
+nav ul {
+list-style: none;
+text-align: center;
+font-weight: 900;
+}
+nav ul li {
+display: inline-block;
+font-weight: 900;
+}
+nav ul li a {
+display: block;
+padding: 15px;
+text-decoration: none;
+color: #232F55;
+font-weight: 900;
+text-transform: uppercase;
+margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+transition: all .5s;
+}
+nav ul li a:hover {
+color: #555;
+}
+ nav.stroke ul li a,
+nav.fill ul li a {
+position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #000;
+height: 2px;
+}
+nav.stroke ul li a:hover:after {
+width: 50%;
+}
+
+nav.fill ul li a {
+transition: all 2s;
+}
+
+nav.fill ul li a:after {
+text-align: left;
+content: '.';
+margin: 0;
+opacity: 0;
+}
+nav.fill ul li a:hover {
+color: #fff;
+z-index: 1;
+}
+nav.fill ul li a:hover:after {
+z-index: -10;
+animation: fill 1s forwards;
+-webkit-animation: fill 1s forwards;
+-moz-animation: fill 1s forwards;
+opacity: 1;
+}
+#sticky{
+  background-color: #fff;
+  width: 100%;
+  top:0;
+  transition: .2s;
+}
+#sticky.fixed {
+  position: fixed;
+  box-shadow: 5px 5px 19px 0px rgba(28, 28, 28, 0.737);
+  background-color:#860707 ;
+  z-index: 1;
+}
+#sticky.fixed ul li img {
+  height: 100px;
+}
+#sticky.fixed ul li a {
+  font-size: 18px;
+  color: #000;
+}
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.row {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex-basis: 50%;
+  min-width: 300px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header {
+  background:url('./Oil-Refinery-scaled-e1630945974230.jpg');
+  margin-bottom: -24px;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+}
+.bg-col a.btn {
+  margin: 30px 0;
+  display: inline-block;
+  color: #fff;
+  background-color: #ff523b;
+  padding: 8px 30px;
+  border-radius: 25px;
+  transition: .5s;
+}
+.bg-col a.btn:hover{
+  background: #563434;
+  color:#fff;
+}
+.bg-col {
+  align-items: center;
+  text-align: inherit;
+  margin: 145px 0px 0px 0px;
+}
+.bg-col h4{
+  font-size: 26px;
+  font-weight: 700;
+  color: #000;
+}
+.col-lg-4 {
+  background: #b11f1f;
+  color: #fff;
+  border: 2px solid;
+  cursor: pointer;
+  text-align: center ;
+}
+.col-lg-4 {
+  padding:40px 20px;
+  transition: .5s;
+}
+.col-lg-4 h4{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.col-lg-4:hover {
+  transition: .5s;
+  background: radial-gradient(#f71f03, #da4126fa);
+}
+.row.featurette {
+  margin: 100px 0px;
+}
+p .btn {
+  border-radius: 40px;
+  color:  rgb(239, 237, 237);
+  background: #ff523b;
+  transition: .5s;
+  border:1px solid  #ff523b;
+}
+p .btn:hover {
+  color: rgb(239, 237, 237);
+  background:  radial-gradient(#563434, #563434);
+}
+.accordion-body {
+  color: black;
+  
+}
+
+button.accordion-button.collapsed:hover {
+  background: linear-gradient(45deg, #bd0404, #b3311d);
+}
+img.rounded.float-end.img-thumbnail {
+  margin: -129px 0px 0px 0px;
+  padding: 28px;
+  cursor: pointer;
+  transition: .5s;
+}
+img.rounded.float-end.img-thumbnail:hover{
+  filter: blur(1px);
+  height: 100px;
+}
+img.rounded.float-start.img-thumbnail {
+  PADDING: 26px;
+  margin-right: -108px;
+  cursor: pointer;
+  transition: .5s;
+}
+img.rounded.mx-auto.d-block.img-thumbnail {
+  padding: 28px;
+  cursor: pointer;
+  
+}
+img.rounded.float-start.img-thumbnail:hover {
+  filter: blur(1px);
+  height: 100px;
+  transition: .5s;
+}
+img.rounded.mx-auto.d-block.img-thumbnail:hover{
+  filter: blur(1px);
+  height: 100px;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(209, 210, 221); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgb(27, 44, 60); 
+}

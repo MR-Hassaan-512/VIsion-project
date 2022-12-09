@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style3.css">
+        <title>P.M.O.S</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="./P.M.O.S (1).png" type="image/x-icon" style="height:200;" width="500" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="http://kit.fontawesome.com/64d58efce2.js"></script>    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>    
+<body>
+
+<style>
+    #button {
+  display: inline-block;
+  background-color: #ff0000ae;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #b11f1f;
+}
+#button:active {
+  background-color: #b11f1f;
+  text-decoration:none;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+  text-decoration: none;
+}
+
+      .input-field.success{
+    display: block;   
+    }
+    .input-field.success span{
+      display: none;
+    }
+    .input-field  span{
+            color: red;
+        }
+        .fa-exclamation-circle{
+            color: red;
+        }
+        .fa-check-circle{
+            color: green;
+        }
+</style>
+<a id="button" style="border-radius: 50%; text-decoration:none; opacity:70%;"></a>
+
+
+    <div id="header"></div>
+    <nav class="navbar navbar-expand-lg   navbar-light " id="sticky" >
+        <div class="container-fluid">
+          <a href="#"><img src="./P.M.O.S (1).png" width="100" alt="" data-pagespeed-url-hash="1320415278" class="d-inline-block " onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+          </a>
+    
+          <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+    
+  
+
+          <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+            <nav class="stroke">
+                <ul>
+                  <li><a href="./index.html" style=" font-weight:900;"><b>Home</b></a></li>
+                  <li><a href="./index4.html" style=" font-weight:900;">About</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" font-weight:900;">
+                     <b>Shop</b>
+                    </a>
+                    <ul class="dropdown-menu" style="transition: .5s;" aria-labelledby="navbarDropdown">
+                      <li><a  href="./idex3.html" style=" font-weight:900; font-size:12px">Checkout</a></li>
+                      <li><a  href="./index5.html" style=" font-weight:900; font-size:12px">Store</a></li>
+                      
+                    </ul>
+                  </li>
+
+                
+                  <li><a href="./index2.html" style=" font-weight:900;"><b>Account</b></a></li>
+                  <li><a href="./index7.html" style=" font-weight:900;"  ><b>feedback</b></a></li>
+                  
+                  <li><a href="./index6.html" style=" font-weight:900;"><b>Contact</b></a></li>
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </nav>
+   <section class="page_title ds s-parallax s-pb-xl-80  s-pb-lg-100  s-pb-md-90 s-pt-md-190 s-pt-180 s-pb-60" style="background-position: 50% 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Shopping Cart</h1>
+                <nav class="head" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">cart</li>
+                      
+                    </ol>
+                  </nav>
+
+            </div>
+
+
+        </div>
+    </div>
+</section>
+    <section class="ls s-pt-xl-160 s-pb-xl-280 s-pt-lg-130 s-pb-lg-250 s-py-md-90 s-py-60">
+        <div class="container">
+            <div class="row">
+                <main class="col-lg-12">
+                    <div class="woocommerce-info">Returning customer? <a href="./index2.html" style="text-decoration:none ; color:grey;" class="showlogin">Click here to login</a>
+                    </div>
+
+
+
+                    <div class="woocommerce-info">Have a coupon? <input class="form-control" type="text" name="coupan code" id="coupan" placeholder="Enter coupan code">
+                    </div>
+
+
+
+                    <form name="checkout" method="post" class="checkout woocommerce-checkout" action="/" enctype="multipart/form-data" novalidate="novalidate">
+
+
+                        <div class="woocommerce-NoticeGroup woocommerce-NoticeGroup-checkout">
+                            <ul class="woocommerce-error">
+                                <li><strong style="color:#e81818 !important;">Billing First name</strong> is a required field.</li>
+                                <li><strong style="color:#e81818 !important;">Billing Last name</strong> is a required field.</li>
+                                <li>Please enter a valid postcode / ZIP.</li>
+                            </ul>
+                        </div>
+
+     
+                    </form>
+                </main>
+              <!-- <div class="main-1 d-flex justify-space-between">
+                <div class="main-2">
+                     
+                <div class="heading" style="color:#073243 ; font-size: 26px;">
+                    <b>Billing details</b>
+                </div>
+                <form class="b-detail">
+                     <input type="text" name="F-name" id="f-name" placeholder="First name" required>
+                     <br>
+                     <br>
+                     <input type="text" name="F-name" id="f-name" placeholder="last  name" required>
+                     <br>
+                     <br>
+                     <input type="text" name="F-name" id="f-name" placeholder="City name" required>
+                     <br>
+                     <br>
+                     <input type="text" name="F-name" id="f-name" placeholder="Town name" required>
+                     <br>
+                     <br>
+                     <input type="text" name="F-name" id="f-name" placeholder="street number" required>
+                     <br>
+                     <br>
+                     <input type="text" name="F-name" id="f-name" placeholder="Zip-code" required>
+                     <br>
+                     <br>
+                     <input type="text" name="F-name" id="f-name" placeholder="House number" required>
+                     <br>
+                     <br>
+                     <input type="tel" name="F-name" id="f-name" placeholder="Contact number" required>
+                     <br>
+                     <br>
+                     <input type="email" name="F-name" id="f-name" placeholder="email-adress" required>
+                     <br>
+                     <br>
+                </form>
+                <div class="heading" style="color:#073243 ; font-size: 26px;">
+                    <b>Additional information</b>
+                </div>
+                <p class="form-row notes" id="order_comments_field" data-priority="">
+                    <label for="order_comments" class="">Order notes</label>
+                    <textarea name="order_comments" class="input-text " id="order_comments" placeholder="Notes about your order, e.g. special notes for delivery." rows="2" cols="5"></textarea>
+                </p>
+                    </div>
+                    <div class="main-3">
+                        
+                         <div id="order_review" class="woocommerce-checkout-review-order">
+
+
+                            <div class="heading" style="color:#073243 ; font-size: 24px;">
+                                <b>your order</b>
+                            </div>
+                            <table class="shop_table woocommerce-checkout-review-order-table">
+                                <thead>
+                                    <tr>
+                                        <th class="product-name">Product</th>
+                                        <th class="product-total">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="cart_item">
+                                        <td class="product-name">
+                                            Premium Quality&nbsp; <strong class="product-quantity">× <input type="number" name="quantity" value="1" class="quantity">L</strong>
+                                        </td>
+                                        <td class="product-total">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">Rs</span>210</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart_item">
+                                        <td class="product-name">
+                                            Shell oil&nbsp; <strong class="product-quantity">× <input type="number" name="quantity" value="1" class="quantity">L</strong>
+                                        </td>
+                                        <td class="product-total">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">Rs</span>300</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart_item">
+                                        <td class="product-name">
+                                            kerosine oil&nbsp; <strong class="product-quantity">× <input type="number" name="quantity" value="3" class="quantity">L</strong>
+                                        </td>
+                                        <td class="product-total">
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">Rs</span>546</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+
+                                    <tr class="cart-subtotal">
+                                        <th>Subtotal</th>
+                                        <td>
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">Rs</span>1056</span>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="order-total">
+                                        <th>Total <span style="    font-size: 10px;
+                                            color: black;">Incl.d.charges</span></th>
+                                        <td> 
+                                            <strong>
+                <span class="woocommerce-Price-amount amount">
+                    <span class="woocommerce-Price-currencySymbol">Rs</span>1106</span>
+            </strong>
+                                        </td>
+                                    </tr>
+
+
+                                </tfoot>
+                            </table>
+
+                            <div id="payment" class="woocommerce-checkout-payment">
+                                <ul class="wc_payment_methods payment_methods methods">
+                                    <li class="wc_payment_method payment_method_cheque">
+                                        <input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method" value="cheque" checked="checked" data-order_button_text="">
+
+                                        <label for="payment_method_cheque">
+                                            Credit cart payments </label>
+                                        <div class="payment_box payment_method_cheque" style="display: none;">
+                                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store
+                                                Postcode.</p>
+                                        </div>
+                                    </li>
+                                    <li class="wc_payment_method payment_method_cod">
+                                        <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" data-order_button_text="">
+
+                                        <label for="payment_method_cod">
+                                            Cash on delivery </label>
+                                        <div class="payment_box payment_method_cod" style="display: block;">
+                                            <p>Pay with cash upon delivery.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="form-row place-order">
+                                    <noscript>
+                                        Since your browser does not support JavaScript, or it is disabled, please ensure you click the
+                                        &lt;em&gt;Update Totals&lt;/em&gt; button before placing your order. You may be charged more
+                                        than the amount stated above if you fail to do so. &lt;br/&gt;&lt;input type="submit"
+                                        class="button alt" name="woocommerce_checkout_update_totals" value="Update totals" /&gt;
+                                    </noscript>
+
+
+                                    <button>
+                                        <svg style="width:24px;height:24px" viewBox="0 0 24 24" id="cart">
+                                          <path fill="#000000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
+                                      </svg>
+                                        <span>Checkout</span>
+                                        <svg id="check" style="width:24px;height:24px" viewBox="0 0 24 24">
+                                          <path stroke-width="2" fill="none" stroke="#ffffff" d="M 3,12 l 6,6 l 12, -12"/>
+                                        </svg>
+                                      </button>
+
+                                </div>
+                            </div>
+
+                        </div> 
+                    
+                       
+                    </div>
+
+            </div> -->
+            <section class="ls s-py-xl-160 text-sm-left text-left s-py-lg-130 s-py-md-90 s-py-60 c-gutter-60">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="main-2">
+                     
+                            <div class="heading" style="color:#e81818 ; font-size: 26px;">
+                                <b>Billing details</b>
+                            </div>
+                            <form class="b-detail" action="">
+
+                              <div class="input-field">
+                                
+                                <input class="form-control" type="text" name="" id="uname" placeholder="First Name">
+                                <i class="fa" aria-hidden="true"></i>
+                                <span></span>
+                            </div>
+                                 <br>
+                                 <div class="input-field">
+                                  
+                                  <input class="form-control" type="text" name="" id="sname" placeholder="Second-Name">
+                                  <i class="fa" aria-hidden="true"></i>
+                                  <span></span>
+                              </div>
+                                 <br>
+                                 <input class="form-control" type="text" name="F-name" id="c-name" placeholder="City name" required>
+                                 <br>
+                                 <input class="form-control" type="text" name="F-name" id="t-name" placeholder="Town name" required>
+                                 <br> 
+                                 <input class="form-control" type="text" name="F-name" id="s-num" placeholder="street number" required>
+                                 <br>
+                                 <input class="form-control" type="text" name="F-name" id="z-num" placeholder="Zip-code" required>
+                                 <br>
+                                 <input class="form-control" type="text" name="F-name" id="h-num" placeholder="House number" required>
+                                 <br>
+                                 <div class="input-field">
+                                 
+                                  <input class="form-control" type="text" name="" id="Phone" placeholder="Phone number">
+                                  <i class="fa" aria-hidden="true"></i>
+                                  <span></span>
+                                  </div>
+                                 <br>
+                                 <div class="input-field">
+                                 
+                                  <input class="form-control" type="text" name="" id="email" placeholder="Email Address">
+                                  <i class="fa" aria-hidden="true"></i>
+                                  <span></span>
+                                  </div>
+                                 <br>
+                            </form>
+                            <div class="heading" style="color:#e81818 ; font-size: 26px;">
+                                <b>Additional information</b>
+                            </div>
+                            <div class="input-field">
+                              
+                               <textarea class="form-control" type="text" name="" id="msg" placeholder="Additional Information about Your Order"></textarea>
+                              <i class="fa" aria-hidden="true"></i>
+                              <span></span>
+                              </div>
+                                </div>
+                      
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="main-3">
+                        
+                            <div id="order_review" class="woocommerce-checkout-review-order">
+   
+   
+                               <div class="heading" style="color:#e81818 ; font-size: 24px;">
+                                   <b>your order</b>
+                               </div>
+                               <table class="shop_table woocommerce-checkout-review-order-table">
+                                   <thead>
+                                       <tr>
+                                           <th class="product-name">Product</th>
+                                           <th class="product-total">Total</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr class="cart_item">
+                                           <td class="product-name">
+                                               Premium Quality&nbsp; <strong class="product-quantity">× <input  type="number" name="quantity" value="1" class="quantity">L</strong>
+                                           </td>
+                                           <td class="product-total">
+                                               <span class="woocommerce-Price-amount amount">
+                                                   <span class="woocommerce-Price-currencySymbol">Rs</span>210</span>
+                                           </td>
+                                       </tr>
+                                       <tr class="cart_item">
+                                           <td class="product-name">
+                                               Shell oil&nbsp; <strong class="product-quantity">× <input  type="number" name="quantity" value="1" class="quantity">L</strong>
+                                           </td>
+                                           <td class="product-total">
+                                               <span class="woocommerce-Price-amount amount">
+                                                   <span class="woocommerce-Price-currencySymbol">Rs</span>300</span>
+                                           </td>
+                                       </tr>
+                                       <tr class="cart_item">
+                                           <td class="product-name">
+                                               kerosine oil&nbsp; <strong class="product-quantity">× <input  type="number" name="quantity" value="3" class="quantity">L</strong>
+                                           </td>
+                                           <td class="product-total">
+                                               <span class="woocommerce-Price-amount amount">
+                                                   <span class="woocommerce-Price-currencySymbol">Rs</span>546</span>
+                                           </td>
+                                       </tr>
+                                   </tbody>
+                                   <tfoot>
+   
+                                       <tr class="cart-subtotal" style="color:#e81818 !important;">
+                                           <th>Subtotal</th>
+                                           <td>
+                                               <span class="woocommerce-Price-amount amount">
+                                                   <span class="woocommerce-Price-currencySymbol">Rs</span>1056</span>
+                                           </td>
+                                       </tr>
+   
+   
+                                       <tr class="order-total" style="color:#e81818 !important;">
+                                           <th>Total <span style="    font-size: 10px;
+                                               color: black;">Incl.d.charges</span></th>
+                                           <td> 
+                                               <strong>
+                   <span class="woocommerce-Price-amount amount">
+                       <span class="woocommerce-Price-currencySymbol">Rs</span>1106</span>
+               </strong>
+                                           </td>
+                                       </tr>
+   
+   
+                                   </tfoot>
+                               </table>
+   
+                               <div id="payment" class="woocommerce-checkout-payment">
+                                   <ul class="wc_payment_methods payment_methods methods">
+                                       <li class="wc_payment_method payment_method_cheque">
+                                           <input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method" value="cheque" checked="checked" data-order_button_text="">
+   
+                                           <label for="payment_method_cheque">
+                                               Credit cart payments </label>
+                                           <div class="payment_box payment_method_cheque" style="display: none;">
+                                               <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store
+                                                   Postcode.</p>
+                                           </div>
+                                       </li>
+                                       <li class="wc_payment_method payment_method_cod">
+                                           <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" data-order_button_text="">
+   
+                                           <label for="payment_method_cod">
+                                               Cash on delivery </label>
+                                           <div class="payment_box payment_method_cod" style="display: block;">
+                                               <p>Pay with cash upon delivery.</p>
+                                           </div>
+                                       </li>
+                                   </ul>
+                                   <div class="form-row place-order">
+                                       <noscript>
+                                           Since your browser does not support JavaScript, or it is disabled, please ensure you click the
+                                           &lt;em&gt;Update Totals&lt;/em&gt; button before placing your order. You may be charged more
+                                           than the amount stated above if you fail to do so. &lt;br/&gt;&lt;input type="submit"
+                                           class="button alt" name="woocommerce_checkout_update_totals" value="Update totals" /&gt;
+                                       </noscript>
+   
+   
+                                       <button type="button" id="submit" value="submit">
+                                           <svg style="width:24px;height:24px" viewBox="0 0 24 24" id="cart">
+                                             <path fill="#000000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
+                                         </svg>
+                                           <span>Checkout</span>
+                                           <svg id="check" style="width:24px;height:24px" viewBox="0 0 24 24">
+                                             <path stroke-width="2" fill="none" stroke="#ffffff" d="M 3,12 l 6,6 l 12, -12"/>
+                                           </svg>
+                                         </button>
+   
+                                   </div>
+                               </div>
+   
+                           </div> 
+                       
+                          
+                       </div>
+                        </div>
+                        
+                      </div>
+                  </div>
+                </div>
+                </div>
+                </section>
+            </section>
+              
+            </div>
+            
+        </div>
+    </section>
+
+
+    <div class="container-fluid px-5 py-5" style="background-color:#a00505da;">
+        <div class="row">
+                 
+          <div class="col-lg-3 col-sm-12 ">
+         <div class="single-footer-caption">
+      
+              <div class="footer-logo" style="
+              margin-top: -30px;
+          ">
+              <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;"><img src="./P.M.O.S (1).png"  width="50%" alt="" class="img-fluid"> </h4></a>
+              </div>
+              <div class="footer-tittle">
+                <p class="text-left" style="color:#A5A7C5; font-weight: 500; cursor: pointer; text-align: justify;">Our services is to sustainably make the pleasure & benefits of petroleum products to many.</p>
+      
+              </div>
+      
+              
+      
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 my-5">
+         <div class="single-footer-caption mb-30">
+      
+              <div class="footer-logo mb-25 mb-5">
+              <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Company </h4></a>
+              </div>
+              <div class="footer-tittle">
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">About</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Review</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Insights</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">career</li>
+                  </ol>
+                </nav>
+      
+              </div>
+      
+              
+      
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 my-5">
+         <div class="single-footer-caption mb-30">
+      
+              <div class="footer-logo mb-25 mb-5">
+              <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Newsletter </h4></a>
+              </div>
+              <div class="footer-tittle">
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active text-center" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Sign-up your news letter </li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb ">
+                    <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">
+                      <div class="d-flex justify-content-evenly">
+                      <input type="text" style="margin-right:10px;" class="form-control" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress"><a class="btn btn-outline-danger" href="#" role="button">GO</a>
+                   </div>
+                  </li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page"> <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/facebook-button-light-99fde1b2.svg"></a>
+                        
+                        
+                      <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/twitter-button-light-4b743ac5.svg" alt=""></a>
+          
+          
+                      <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/vkontakte-button-light-bf48b9be.svg" alt=""></a>
+                    </li>
+                  </ol>
+                </nav>
+  
+  
+  
+      
+              </div>
+      
+              
+      
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-12 my-5">
+         <div class="single-footer-caption mb-30">
+      
+              <div class="footer-logo mb-25 mb-5">
+              <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Contact us </h4></a>
+              </div>
+              <div class="footer-tittle">
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">mrhassaanvlogs@gmail.com</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">H.no: 278 51/A ,Korangi 6 road,Karachi,Pakistan</li>
+                  </ol>
+                </nav>
+                <nav aria-label="breadcrumb" style="cursor: pointer;">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" style="color: #eaa872;font-size: x-large; font-weight:700;transition: .4s;" aria-current="page">(+92 313 2075237)</li>
+                  </ol>
+                </nav>
+      
+              </div>
+      
+              
+      
+              </div>
+          </div>
+      
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+          <div class="col-lg-12">
+            <h6 class="h6 text-center " style="font-size: large; color:#A5A7C5;">Copyright ©2022 All rights reserved | This site is made with <i class="fa fa-heart text-danger"></i> by  <b style="color:#eaa872;"> M.Hassaan</b> & <b style="color:#eaa872;">Luqman Awan</b>  from aptech.</h6>
+          </div>
+        </div>
+      </div>
+
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>             
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+      <script>
+        const nav = document.querySelector('#sticky');
+let navTop = sticky.offsetTop;
+
+function fixedNav() {
+  if (window.scrollY >= navTop) {    
+    nav.classList.add('fixed');
+  } else {
+    nav.classList.remove('fixed');    
+  }
+}
+
+window.addEventListener('scroll', fixedNav);
+      </script>
+ 
+ <script src="./form.js"></script>
+ <script>
+  var btn = $('#button');
+
+$(window).scroll(function() {
+if ($(window).scrollTop() > 300) {
+btn.addClass('show');
+} else {
+btn.removeClass('show');
+}
+});
+
+btn.on('click', function(e) {
+e.preventDefault();
+$('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
+</body>
+</html>

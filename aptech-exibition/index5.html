@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style5.css">
+        <title>P.M.O.S</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="icon" href="./P.M.O.S (1).png" type="image/x-icon" style="height:200;" width="500" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head> 
+<body>
+  <style>
+
+#button {
+  display: inline-block;
+  background-color: #ff0000ae;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #b11f1f;
+}
+#button:active {
+  background-color: #b11f1f;
+  text-decoration:none;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+  text-decoration: none;
+}
+.heading {
+  position: relative;
+  margin: 0 0 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+}
+
+.heading:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 0;
+    width: 106px;
+    height: 6px;
+    border-left: 50px solid #f12735;
+    background-color: #1598e3;
+}
+.heading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  border-right: 3px solid #1598e3;
+  border-bottom: 3px solid #1598e3;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+
+  </style>
+
+<a id="button" style="border-radius: 50%; text-decoration:none; opacity:70%;"></a>
+
+    <div id="header"></div>
+    <nav class="navbar navbar-expand-lg   navbar-light " id="sticky" >
+      <div class="container-fluid">
+        <a href="#"><img src="./P.M.O.S (1).png" width="100" alt="" data-pagespeed-url-hash="1320415278" class="d-inline-block " onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </a>
+  
+        <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+  
+
+
+        <div class="collapse navbar-collapse justify-content-evenly" id="navbarSupportedContent">
+          <nav class="stroke">
+              <ul>
+                <li><a href="./index.html" style=" font-weight:900;"><b>Home</b></a></li>
+                <li><a href="./index4.html" style=" font-weight:900;">About</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" font-weight:900;">
+                   <b>Shop</b>
+                  </a>
+                  <ul class="dropdown-menu" style="transition: .5s;" aria-labelledby="navbarDropdown">
+                    <li><a  href="./idex3.html" style=" font-weight:900; font-size:12px">Checkout</a></li>
+                    <li><a  href="./index5.html" style=" font-weight:900; font-size:12px">Store</a></li>
+                    
+                  </ul>
+                </li>
+
+              
+                <li><a href="./index2.html" style=" font-weight:900;"><b>Account</b></a></li>
+                <li><a href="./index7.html" style=" font-weight:900;"  ><b>feedback</b></a></li>
+                
+                <li><a href="./index6.html" style=" font-weight:900;"><b>Contact</b></a></li>
+              </ul>
+            </nav>
+        </div>
+      </div>
+    </nav>
+   
+    <h1 class="h1"><i class=" fa fa-shopping-cart"></i></h1>
+  
+    <hr style="
+    margin-left: 50px;
+    margin-right: 50px;
+ ">
+    
+  <main>
+ 
+    <h2 class="heading" style="font-weight:600 ; font-size:45px; color: #073243;">Up to 20% off</h2>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="250" class="img-fluid" src="https://media.istockphoto.com/vectors/gas-fuel-pump-flat-icon-vector-id1250129443?k=20&m=1250129443&s=612x612&w=0&h=81G3VO03153Ev4HkQlZhODxE1fsSsTuQUvccnBhIB3s=">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Petrol</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-210.89</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="270" class="img-fluid" src="https://i.pinimg.com/736x/3b/9d/b3/3b9db3bb740405641a044926c074589d.jpg">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Diesel</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-230.49</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="250" class="img-fluid" src="https://media.istockphoto.com/vectors/color-image-of-cartoon-canister-with-petrol-on-a-white-background-vector-id1187145393?k=20&m=1187145393&s=612x612&w=0&h=fOkUSvQHypF_tZOY6Z9begKjx-qasaCT3rBwW3DY3fU=">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Karosine-oil</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-180.549</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+
+
+        </div>
+        <div class="row my-5">
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="250" class="img-fluid" src="./bc5629ef58-caltex_havoline_motor_oil_4_ltr.jpg">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Caltex motor Oil:</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-550.07</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="250" class="img-fluid" src="./shell-helix-ultra-5w-40-1-l-front.jpg">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Shell Helix moto oil:</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-700.09</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="250" class="img-fluid" src="https://www.autostore.pk/wp-content/uploads/2017/10/Mobil-1-Ultimate-All-Round-Performance-0W-40-Engine-Oil-%E2%80%93-4L-Pack-Full-Synthetic-Loyal-Parts-1.jpg">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Mobil 1™ motor oil:</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-900.549</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+
+
+        </div>
+        <div class="row my-5">
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="250" class="img-fluid" src="./04.jpg">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Oil Barrell:</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-1050.00</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="250" class="img-fluid" src="./05.jpg">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Engine-liquid:</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-700.07</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="item">
+              <img width="250" class="img-fluid" src="./02 (1).jpg">
+              <p><b class="h1" style="font-size:20px; text-shadow:2px 2px 3px red; color:#073243;">Anti Freeze liquid:</b><br><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i></p>
+              <h6 style="color:#073243; font-weight:700px; font-size:20px ">Rs-1050.00</h6>
+              <span></span>
+              <button style="  border-radius: 50px;
+    transition: .5s;">Add-cart</button>
+              
+          </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+
+  </section>
+  <div class="container">
+     <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12 ">
+        <div class="select">
+
+        </div>
+      </div>
+     </div>
+  </div>
+
+   </main>
+    <br>
+    <br>
+    <br>
+    <br>
+           <!-- Footer -->
+           <div class="container-fluid px-5 py-5" style="background-color:#a00505da;">
+            <div class="row">
+                     
+              <div class="col-lg-3 col-sm-12 ">
+             <div class="single-footer-caption">
+          
+                  <div class="footer-logo" style="
+                  margin-top: -30px;
+              ">
+                  <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;"><img src="./P.M.O.S (1).png"  width="50%" alt="" class="img-fluid"> </h4></a>
+                  </div>
+                  <div class="footer-tittle">
+                    <p class="text-left" style="color:#A5A7C5; font-weight: 500; cursor: pointer; text-align: justify;">Our services is to sustainably make the pleasure & benefits of petroleum products to many.</p>
+          
+                  </div>
+          
+                  
+          
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-12 my-5">
+             <div class="single-footer-caption mb-30">
+          
+                  <div class="footer-logo mb-25 mb-5">
+                  <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Company </h4></a>
+                  </div>
+                  <div class="footer-tittle">
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">About</li>
+                      </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Review</li>
+                      </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Insights</li>
+                      </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">career</li>
+                      </ol>
+                    </nav>
+          
+                  </div>
+          
+                  
+          
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-12 my-5">
+             <div class="single-footer-caption mb-30">
+          
+                  <div class="footer-logo mb-25 mb-5">
+                  <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Newsletter </h4></a>
+                  </div>
+                  <div class="footer-tittle">
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active text-center" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">Sign-up your news letter </li>
+                      </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb ">
+                        <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">
+                          <div class="d-flex justify-content-evenly">
+                          <input type="text" style="margin-right:10px;" class="form-control" placeholder="EMAIL ADRESS" size="20" value="" name="email-adress"><a class="btn btn-outline-danger" href="#" role="button">GO</a>
+                       </div>
+                      </li>
+                      </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page"> <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/facebook-button-light-99fde1b2.svg"></a>
+                            
+                            
+                          <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/twitter-button-light-4b743ac5.svg" alt=""></a>
+              
+              
+                          <a href="#"><img src="https://www.toptal.com/designers/htmlarrows/assets/images/vkontakte-button-light-bf48b9be.svg" alt=""></a>
+                        </li>
+                      </ol>
+                    </nav>
+      
+      
+      
+          
+                  </div>
+          
+                  
+          
+                  </div>
+              </div>
+              <div class="col-lg-3 col-sm-12 my-5">
+             <div class="single-footer-caption mb-30">
+          
+                  <div class="footer-logo mb-25 mb-5">
+                  <a href="#"><h4 class="h4" style="color:#fff; font-family: revert;">Contact us </h4></a>
+                  </div>
+                  <div class="footer-tittle">
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">mrhassaanvlogs@gmail.com</li>
+                      </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: #A5A7C5; font-weight:500;transition: .4s;" aria-current="page">H.no: 278 51/A ,Korangi 6 road,Karachi,Pakistan</li>
+                      </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb" style="cursor: pointer;">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" style="color: #eaa872;font-size: x-large; font-weight:700;transition: .4s;" aria-current="page">(+92 313 2075237)</li>
+                      </ol>
+                    </nav>
+          
+                  </div>
+          
+                  
+          
+                  </div>
+              </div>
+          
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="row">
+              <div class="col-lg-12">
+                <h6 class="h6 text-center " style="font-size: large; color:#A5A7C5;">Copyright ©2022 All rights reserved | This site is made with <i class="fa fa-heart text-danger"></i> by  <b style="color:#eaa872;"> M.Hassaan</b> & <b style="color:#eaa872;">Luqman Awan</b>  from aptech.</h6>
+              </div>
+            </div>
+          </div>
+  
+        <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+      </script>          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+      <script>
+        const nav = document.querySelector('#sticky');
+let navTop = sticky.offsetTop;
+
+function fixedNav() {
+  if (window.scrollY >= navTop) {    
+    nav.classList.add('fixed');
+  } else {
+    nav.classList.remove('fixed');    
+  }
+}
+
+window.addEventListener('scroll', fixedNav);
+      </script>
+ <script src="./main.js "></script>
+ <script>
+  var btn = $('#button');
+
+$(window).scroll(function() {
+if ($(window).scrollTop() > 300) {
+btn.addClass('show');
+} else {
+btn.removeClass('show');
+}
+});
+
+btn.on('click', function(e) {
+e.preventDefault();
+$('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
+</body>
+</html>
